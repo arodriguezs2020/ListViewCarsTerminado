@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gris"
+    tools:context=".CocheActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="70pt"
+        android:layout_height="0dp"
+        android:layout_marginTop="79dp"
+        android:layout_marginBottom="61dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewTitulo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hw_charger_2014" />
+
+    <TextView
+        android:id="@+id/textViewTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginBottom="35dp"
+        android:text="TextView"
+        android:textSize="14pt"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewDescripcion"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textViewDescripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:layout_marginBottom="45dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/textViewPrecio"
+        app:layout_constraintStart_toStartOf="@+id/textViewTitulo"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitulo" />
+
+    <TextView
+        android:id="@+id/textViewPrecio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="266dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textViewDescripcion"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDescripcion" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
